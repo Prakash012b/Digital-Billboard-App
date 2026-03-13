@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="dashboard">
+
+<div class="sidebar">
+<h3>Billboard App</h3>
+
+<ul>
+<li>Dashboard</li>
+<li>Upload Advertisement</li>
+<li>My Ads</li>
+<li>Subscription</li>
+<li><a href="/logout" style="color:white;">Logout</a></li>
+</ul>
+
+</div>
+
+<div class="main">
+
+<h2>Welcome {{ user }}</h2>
+
+<div class="card">
+<h3>Active Advertisements</h3>
+<p>No ads uploaded yet</p>
+</div>
+
+<div class="card">
+<h3>Billboard Locations</h3>
+<p>3 billboards available in your area</p>
+</div>
+
+<div class="card">
+<h3>Subscription Plan</h3>
+<p>Basic Plan</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
